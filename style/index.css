@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:cursive;
+} 
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -100;
+    object-fit: cover;
+    z-index:-1;
+}
+
+.welcome-message{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    min-width: 100%; 
+    min-height: 100%;
+    justify-content:center;
+    align-items:center;
+    z-index:1;
+    color:white;
+}
