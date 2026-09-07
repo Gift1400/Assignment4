@@ -1,4 +1,4 @@
-# 🕹️ Jump the Cactus
+# 🕹️ Jumper
 
 A simple 2D game built with JavaScript using the HTML5 `<canvas>` element.  
 The player controls a character that must jump to avoid obstacles (cacti) and achieve the highest possible score.
