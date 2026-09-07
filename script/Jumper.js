@@ -14,7 +14,8 @@ const player = {
   velocityY: 0,
   gravity: 0.9,
   jumpStrength: -16,
-  grounded: true
+  grounded: true,
+  borderRadius: 12 
 };
 
 let obstacles = [];
@@ -39,7 +40,7 @@ function resetGame() {
   speed = 6;
 
   scoreEl.textContent = "Score: 0";
-  statusEl.textContent = "Stato: In gioco";
+  statusEl.textContent = "Status: playing";
   requestAnimationFrame(gameLoop);
 }
 

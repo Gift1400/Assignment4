@@ -1,59 +1,90 @@
-   * {
-      box-sizing: border-box;
-    }
+* {
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f7fb;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
 
-    .wrapper {
-      text-align: center;
-    }
+#background-video {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+  filter: blur(4px) brightness(0.6);
+}
 
-    h1 {
-      margin-bottom: 10px;
-      font-size: 28px;
-    }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 999;
+  align-self: center;
+  padding:0 0 3rem 0;
+}
 
-    p {
-      margin-top: 0;
-      color: #444;
-    }
+h1 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+  color:white;
+}
 
-    canvas {
-      border: 3px solid #222;
-      background: linear-gradient(#dff3ff 0%, #dff3ff 70%, #ead7b0 70%, #ead7b0 100%);
-      display: block;
-      margin: 12px auto;
-      max-width: 100%;
-    }
+p {
+  margin-top: 0;
+  color: #e7dcdc;
+  font-size: 1rem;
+}
 
-    .hud {
-      display: flex;
-      justify-content: space-between;
-      width: 800px;
-      max-width: 100%;
-      margin: 0 auto 8px;
-      font-weight: bold;
-      color: #222;
-    }
+canvas {
+  border: 2px solid #fffcfc;
+  background: linear-gradient(
+    #357ca8 0%,
+    #6fc6fc 70%,
+    #7b6946 70%,
+    #e6d7bb 100%
+  );
+  border-radius: 20px;
+  display: block;
+  margin: 12px auto;
+  max-width: 100%;
+  z-index: 888;
+}
 
-    button {
-      padding: 10px 18px;
-      font-size: 16px;
-      border: none;
-      background: #222;
-      color: white;
-      cursor: pointer;
-      border-radius: 8px;
-    }
+.hud {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto 8px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
 
-    button:hover {
-      opacity: 0.9;
-    }
+button {
+  display: relative;
+  font-size: 1.3rem;
+  border: none;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 1rem;
+  align-self: center;
+}
+
+button:hover {
+  opacity: 0.9;
+}
